@@ -1,13 +1,29 @@
-.tarjeta{
-     display:flex;
-     flex-direction:column;
-     justify-content:space-between;
-     width:420px;
-     border: 1px solid lightgray;
-     box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-     border-radius:15px;
-     font-family: sans-serif;
+/* Tarjeta del componente hijo */
+.tarjeta {
+    /* Color de fondo verde claro */
+    background: lightgreen;
+
+    /* Espaciado interno */
+    padding: 20px;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* Espacio arriba */
+    margin-top: 20px;
+
+    /* Borde sólido */
+    border: 2px solid darkgreen;
 }
-.cuerpo{
-     padding: 10px;
-    }
+
+/* Contenido de la tarjeta */
+.cuerpo p {
+    /* Espaciado entre párrafos */
+    margin: 10px 0;
+
+    /* Tamaño de letra */
+    font-size: 18px;
+
+    /* Color del texto */
+    color: darkgreen;
+}

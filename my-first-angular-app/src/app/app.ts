@@ -1,7 +1,7 @@
 // Importamos Angular y RouterOutlet para mostrar las páginas
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-// Importamos encabezado (nota: el archivo se llama encabezado.ts SIN .component)
+// Importamos encabezado
 import { EncabezadoComponent } from './components/encabezado/encabezado';
 
 @Component({
@@ -13,5 +13,5 @@ import { EncabezadoComponent } from './components/encabezado/encabezado';
   styleUrls: ['./app.css']
 })
 export class App {
-  // Ya no necesitas nada aquí, el router maneja todo
+  // El router maneja todo automáticamente
 }
