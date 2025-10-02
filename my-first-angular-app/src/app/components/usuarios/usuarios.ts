@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-// ← Cambiado: ahora sube 2 niveles (..) en lugar de 1
-import { UserProfileComponent } from '../../../componentes/user-profile/user-profile';
+// Ruta correcta: 2 niveles arriba
+import { UserProfileComponent } from '../../componentes/user-profile/user-profile';
 
 @Component({
   selector: 'app-usuarios',
