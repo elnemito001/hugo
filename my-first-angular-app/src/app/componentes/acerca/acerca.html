@@ -1,0 +1,44 @@
+<!-- Contenedor principal -->
+<div class="acerca-container">
+
+  <!-- Tarjeta de información del proyecto -->
+  <div class="info-card">
+    <h1>{{ nombreProyecto }}</h1>
+
+    <!-- Detalles básicos -->
+    <div class="detalles">
+      <p><strong>Versión:</strong> {{ version }}</p>
+      <p><strong>Fecha:</strong> {{ fecha }}</p>
+    </div>
+
+    <!-- Sección de tecnologías -->
+    <div class="seccion">
+      <h2>Tecnologías Utilizadas</h2>
+      <div class="tech-grid">
+        <!-- Recorre el array de tecnologías -->
+        <div class="tech-item" *ngFor="let tech of tecnologias">
+          <h3>{{ tech.nombre }}</h3>
+          <p>{{ tech.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de características -->
+    <div class="seccion">
+      <h2>Características del Proyecto</h2>
+      <ul class="lista-caracteristicas">
+        <!-- Recorre el array de características -->
+        <li *ngFor="let caracteristica of caracteristicas">
+          ✓ {{ caracteristica }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Información adicional -->
+    <div class="footer-info">
+      <p>Proyecto desarrollado como práctica de Angular</p>
+      <p>Tecnológico Nacional de México - Campus Valle</p>
+    </div>
+  </div>
+
+</div>

@@ -1,11 +1,17 @@
+// Importamos Angular y RouterOutlet para mostrar las páginas
 import { Component } from '@angular/core';
-import { CompoPadreComponent } from './componentes/compo-padre/compo-padre';
+import { RouterOutlet } from '@angular/router';
+// Importamos encabezado (nota: el archivo se llama encabezado.ts SIN .component)
+import { EncabezadoComponent } from './components/encabezado/encabezado';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CompoPadreComponent],
+  // Importamos el encabezado y RouterOutlet (necesario para que funcione la navegación)
+  imports: [EncabezadoComponent, RouterOutlet],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-export class AppComponent {}
+export class App {
+  // Ya no necesitas nada aquí, el router maneja todo
+}

@@ -1,6 +1,17 @@
 <div class="tarjeta">
     <div class="cuerpo">
-        <p>Este el componente padre que envia un mensaje al componente hijo</p>
-        <app-compo-hijo [data]="user"></app-compo-hijo>
+        <p>Este es el componente padre que envía un mensaje al componente hijo</p>
+
+        <!-- Escucha el evento (notify) que emite el hijo -->
+        <app-compo-hijo
+            [data]="user"
+            (notify)="onNotify($event)">
+        </app-compo-hijo>
+
+        <!-- Muestra el mensaje recibido del hijo -->
+        <div *ngIf="mensajeDelHijo" style="margin-top: 20px; padding: 10px; background-color: #e8f5e9; border-radius: 5px;">
+            <strong>Mensaje recibido del hijo:</strong>
+            <p>{{ mensajeDelHijo }}</p>
+        </div>
     </div>
 </div>

@@ -1,0 +1,32 @@
+<!-- Contenedor principal de la página Home -->
+<div class="home-container">
+
+  <!-- Tarjeta de presentación -->
+  <div class="card-presentacion">
+    <h1>¡Bienvenido! 👋</h1>
+
+    <!-- Información personal -->
+    <div class="info-personal">
+      <h2>Acerca de mí</h2>
+      <p><strong>Nombre:</strong> {{ nombre }}</p>
+      <p><strong>Edad:</strong> {{ edad }} años</p>
+      <p><strong>Carrera:</strong> {{ carrera }}</p>
+      <p><strong>Semestre:</strong> {{ semestre }}</p>
+    </div>
+
+    <!-- Sección de intereses -->
+    <div class="intereses-section">
+      <h3>Mis Intereses</h3>
+      <ul>
+        <!-- *ngFor repite el <li> por cada elemento del array -->
+        <li *ngFor="let interes of intereses">{{ interes }}</li>
+      </ul>
+    </div>
+
+    <!-- Mensaje adicional -->
+    <div class="mensaje">
+      <p>Esta es mi aplicación Angular donde practico comunicación entre componentes y navegación.</p>
+    </div>
+  </div>
+
+</div>
